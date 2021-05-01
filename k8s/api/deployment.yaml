@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: api
 spec:
-  replicas: 20
+  replicas: 10
   selector:
     matchLabels:
       app: api
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: chicodev/api-bootcamp-produto           
+          image: chicodev/api-bootcamp-produto          
           ports: 
           - containerPort: 8080
           env: 
