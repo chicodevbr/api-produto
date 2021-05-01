@@ -34,7 +34,7 @@ jobs:
           # Path to the Dockerfile
           file: ./src/Dockerfile
           push: true
-          tags:
+          tags: |
             chicodev/api-bootcamp-produto:latest
             chicodev/api-bootcamp-produto:${{github.run_number}}
             
